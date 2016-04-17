@@ -14,6 +14,7 @@ var playState = {
 
 		this.player = game.add.sprite(game.world.centerX, game.world.centerY, 'player');
 		this.player.anchor.setTo(0.5, 0.5);
+		game.physics.arcade.enable(this.player);
 		this.player.body.gravity.y = 500;
 
 		this.enemies.game.add.group();
@@ -30,7 +31,7 @@ var playState = {
 
 		this.createWorld();
 
-		game.time.events.loop(2200, this.addEnemey, this);
+		game.time.events.loop(2200, this.addEnemy, this);
 
 	},
 
