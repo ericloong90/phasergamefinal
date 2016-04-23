@@ -11,19 +11,34 @@ var loadState = {
 		loadingLabel.anchor.setTo(0.5, 0.5);
 
 		// Display the loading bar
-		var progressBar = game.add.sprite(game.world.centerX, 200, 'assets/progressBar.png');
+		var progressBar = game.add.sprite(game.world.centerX, 200, 'progressBar');
 		progressBar.anchor.setTo(0.5, 0.5);
 		game.load.setPreloadSprite(progressBar);
 
 		// Load all our assets
-		game.load.image('player', 'assets/player.png');
+		game.load.spritesheet('player', 'assets/player2.png', 20, 20);
+		game.load.spritesheet('mute', 'assets/muteButton.png', 28, 22);
 		game.load.image('enemy', 'assets/enemy.png');
 		game.load.image('coin', 'assets/coin.png');
 		game.load.image('wallV', 'assets/wallVertical.png');
 		game.load.image('wallH', 'assets/wallHorizontal.png');
+		game.load.image('pixel', 'assets/pixel.png');
 
 		// Load a new asset that we will use in the menu state
 		game.load.image('background', 'assets/background.png');
+
+		// Sound when the player jumps
+		game.load.audio('jump', ['assets/jump.mp3', 'assets/jump.ogg']);
+
+		// Sound when the player takes a coin
+		game.load.audio('coin', ['assets/coin.mp3', 'assets/coin.ogg']);
+
+		// Sound when the player dies
+		game.load.audio('dead', ['assets/dead.mp3', 'assets/dead.ogg']);
+
+		// Load the music in 2 different formats
+		game.load.audio('menuMusic', 'assets/101-title.mp3');
+		game.load.audio('gameMusic', 'assets/108-theme-of-prontera.mp3');
 	},
 
 	create: function () {

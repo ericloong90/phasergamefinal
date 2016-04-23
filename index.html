@@ -3,6 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>First game</title>
+	<!-- This part makes sure that the font is loaded into the HTML without it showing up -->
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Geo);
+
+		.hiddenText {
+			font-family: Geo;
+			visibility: hidden;
+		}
+	</style>
 	<script src="phaser.js"></script>
 	<script src="js/boot.js"></script>
 	<script src="js/load.js"></script>
@@ -11,6 +20,7 @@
 	<script src="js/game.js"></script>
 </head>
 <body>
+	<p class="hiddenText">.</p>
 	<p>Phaser game</p>
 	<div id="gameDiv"></div>
 </body>
