@@ -1,0 +1,22 @@
+{
+  "name": "new-game",
+  "version": "1.0.0",
+  "description": "First Phaser game (platform)",
+  "main": "phaser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericloong90/phasergamefinal.git"
+  },
+  "keywords": [
+    "phaser"
+  ],
+  "author": "Eric Tai Chi Loong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericloong90/phasergamefinal/issues"
+  },
+  "homepage": "https://github.com/ericloong90/phasergamefinal#readme"
+}
