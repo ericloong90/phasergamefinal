@@ -8,7 +8,7 @@
     "phaser": "2.4.6"
   },
   "scripts": {
-    "start": "node js/boot.js",
+    "start": "node boot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
