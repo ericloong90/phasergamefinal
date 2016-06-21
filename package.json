@@ -6,7 +6,7 @@
   "engines": {
     "node": "6.2.1",
     "phaser": "2.4.6"
-    },
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ericloong90/phasergamefinal/issues"
   },
-  "homepage": "https://github.com/ericloong90/phasergamefinal#readme"
+  "homepage": "https://github.com/ericloong90/phasergamefinal#readme",
+  "dependencies": {
+    "phaser": "^2.5.0"
+  }
 }
